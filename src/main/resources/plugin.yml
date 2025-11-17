@@ -1,0 +1,22 @@
+name: PlayerInventoryViewer
+version: 1.1.0
+main: com.kamisama0109.playerinventoryviewer.PlayerInventoryViewer
+api-version: 1.20
+description: プレイヤーインベントリをWebで確認 + Webサーバー管理コマンド
+author: kamisama_9
+website: https://github.com/kamisama0109/PlayerInventoryViewer
+
+commands:
+  piv:
+    description: PlayerInventoryViewer 管理コマンド
+    usage: /piv
+    permission: playerinventoryviewer.admin
+
+permissions:
+  playerinventoryviewer.view:
+    description: インベントリを見る
+    default: op
+
+  playerinventoryviewer.admin:
+    description: Webサーバー管理
+    default: op
